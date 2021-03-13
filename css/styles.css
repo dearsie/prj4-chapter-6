@@ -73,7 +73,7 @@ nav li {
     transform: translate(-50%, -50%);
     position: fixed;
 	top: 50%;
-	left: 50%;
+	left: 25%;
 }
 
 .centertext-top, .centertext-bottom p {
@@ -124,9 +124,12 @@ nav li {
 	margin-left:190px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1200px) {
 	.centertext-wrap {
 	    width:320px;
+	    top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
 	  }
 
 	.centertext {
