@@ -5,6 +5,16 @@
 	font-size: 100%; 
 }
 
+body {
+	background-image: url('../images/teddybearbg.jpg');
+	background-size:cover;
+	background-color:#BCC27C;
+	background-position:center;
+	background-repeat:no-repeat;
+  	background-attachment: fixed;
+  	height:100%;
+}
+
 nav, nav a {
  	background-color: #717344;
   	font-family: 'Nunito', sans-serif;
@@ -23,7 +33,7 @@ nav li {
 }
 
 .footer {
-  	padding: 3px;
+  	padding: 1px;
  	background-color: #717344;
     display: block;
     position: fixed;
@@ -37,10 +47,108 @@ nav li {
   	font-family: 'Nunito', sans-serif;
   	color: white;
   	font-size:14px;
-  	margin:10px 10px 0px 0px;
+  	margin:10px;
 }
 
 .footer-inner a:hover {
 	color:#424327;
   	text-decoration: none;	
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+	margin: auto;
+}
+
+.centertext-wrap {
+	width:620px;
+	height:auto;
+	padding:30px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+.centertext-top, .centertext-bottom p {
+	font-size:30px;
+  	font-family: 'Nunito', sans-serif;
+  	color:white;
+	text-shadow: 1px 1px #A88248;
+}
+
+.centertext-top {
+	text-align:left;
+	position: fixed;
+	margin-top:-120px;
+}
+
+.centertext {
+	width:100%;
+    background: rgba(113, 115, 68, 0.75); 
+	text-align:center;
+	padding:30px;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border-radius:20px;
+}
+
+.centertext h2 {
+  	font-family: 'Nunito', sans-serif;
+  	color: white;
+  	font-size:60px;
+  	text-transform:uppercase;
+  	margin-top:10px;
+  	font-weight:bold;
+  	letter-spacing:3px;
+}
+
+.centertext h2:hover {
+	color:#1B1D1E;
+	text-shadow: 2px 2px #C2A270;
+}
+
+.centertext-bottom {
+	text-align:left;
+	position: fixed;
+	margin-top:75px;
+	margin-left:190px;
+}
+
+@media screen and (max-width: 650px) {
+	.centertext-wrap {
+	    width:320px;
+	  }
+
+	.centertext {
+	  	width:320px;
+	  }
+
+	.centertext h2 {
+	  	font-size:34px;
+	  }
+
+	.centertext-top, .centertext-bottom p {
+		font-size:18px;
+	}
+
+	.centertext-top {
+		margin-top:-115px;
+		margin-left:-15px;
+	}
+
+	.centertext-bottom {
+		margin-top:90px;
+		margin-left:50px;
+	}
+
 }
