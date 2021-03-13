@@ -1,0 +1,36 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	font-size: 100%; 
+}
+
+.cute {
+	color: lightpink;
+	padding: 0.5em; 
+	border-bottom:2px dotted lightpink;
+	font-family: 'Pacifico', cursive;
+	font-size:25px;
+}
+.people {
+	color: lightpink;
+	text-align: right;
+	padding: 20px; 
+	line-height:150%;
+	text-shadow: 1px 1px #D6033D;
+	font-family: 'Quicksand', sans-serif;
+	font-size:20px;
+	background-image: url("../images/pinkstars.jpg");
+ 	background-color: #FDBCD2;
+}
+#lorem-ipsum {
+	color: grey;
+	background-color: #DFDFDF;
+	border: 2px dotted lightpink;
+	border-radius: 25px;
+	text-align: center;
+	padding: 20px 50px; 
+	margin:0 auto;
+	width:400px;
+	text-align:justify;
+}
