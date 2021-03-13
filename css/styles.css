@@ -13,6 +13,7 @@ body {
 	background-repeat:no-repeat;
   	background-attachment: fixed;
   	height:100%;
+  	margin:auto;
 }
 
 nav, nav a {
@@ -21,6 +22,7 @@ nav, nav a {
   	font-size:20px;
   	word-spacing:5px;
   	color:white;
+  	z-index:1;
 }
 
 nav a:hover {
@@ -36,10 +38,10 @@ nav li {
   	padding: 1px;
  	background-color: #717344;
     display: block;
-    position: fixed;
   	left: 0;
   	bottom: 0;
   	width: 100%;
+    position:absolute;
 }
 
 .footer-inner, .footer-inner a {
@@ -71,7 +73,7 @@ nav li {
 	height:auto;
 	padding:30px;
     transform: translate(-50%, -50%);
-    position: fixed;
+    position:fixed;
 	top: 50%;
 	left: 25%;
 }
@@ -123,6 +125,8 @@ nav li {
 	margin-top:75px;
 	margin-left:190px;
 }
+
+
 
 @media screen and (max-width: 1200px) {
 	.centertext-wrap {
