@@ -5,6 +5,12 @@
 	font-size: 100%; 
 }
 
+html {
+  	height:100%;
+  	position: relative;
+	padding-bottom: 101px !important;
+}
+
 body {
 	background-image: url('../images/teddybearbg.jpg');
 	background-size:cover;
@@ -14,6 +20,8 @@ body {
   	background-attachment: fixed;
   	height:100%;
   	margin:auto;
+  	position: relative;
+	padding-bottom: 101px !important;
 }
 
 nav, nav a {
@@ -34,14 +42,17 @@ nav li {
 	padding-left:1em
 }
 
+main {
+	min-height: 100%;
+}
+
 .footer {
-  	padding: 1px;
  	background-color: #717344;
-    display: block;
-  	left: 0;
-  	bottom: 0;
   	width: 100%;
-    position:absolute;
+	position: relative;
+	display: inline-block;
+	overflow:hidden;
+	bottom:-72px;
 }
 
 .footer-inner, .footer-inner a {
@@ -58,7 +69,6 @@ nav li {
 }
 
 .container {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +136,36 @@ nav li {
 	margin-left:190px;
 }
 
+.col {	
+	width:auto;
+	margin-top: 33%;
+	left:-20%;
+}
 
+.textSteps {		
+	background: rgba(113, 115, 68, 0.7);
+	padding:25px;
+    border-radius:20px;
+}
+	
+.textSteps p {
+	text-align:justify;
+	color:white;
+	text-shadow: 1px 1px 5px #606239;
+}
+
+.textSteps h2 {
+	text-align:center;
+	color:white;
+	text-shadow: 2px 2px #C2A270;
+	padding:10px;
+}
+
+@media screen and (max-width: 1500px) {
+	.col {
+		left:0%;
+	}
+}
 
 @media screen and (max-width: 1200px) {
 	.centertext-wrap {
@@ -158,4 +197,22 @@ nav li {
 		margin-left:50px;
 	}
 
+	.col {
+		top: 50%;
+    	left: 0%;
+	}
+
+	.textSteps {		
+		border-radius:20px;
+		width:350px;
+	}
+
+	.textSteps p {
+		font-size:14px;
+	}
+
+	.textSteps h2 {
+		font-size:24px;
+	}
 }
+
