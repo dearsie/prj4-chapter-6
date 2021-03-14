@@ -138,7 +138,6 @@ main {
 
 .col {	
 	width:auto;
-	margin-top: 33%;
 	left:-20%;
 }
 
@@ -160,6 +159,32 @@ main {
 	text-shadow: 2px 2px #C2A270;
 	padding:10px;
 }
+
+.jumbotron {
+	background-color:transparent !important;
+  	font-family: 'Nunito', sans-serif;
+  	width:58%;
+  	margin-left:10%;
+	text-shadow: 1px 1px #C2A270;
+}
+
+.jumbotron p, h1 {
+	text-align:justify;
+	color:white;
+}
+
+.btn {
+	background-color:#C2A270;
+	border-color:#C2A270;
+	border-radius:20px;
+}
+
+.btn:hover {
+	background-color:#A88248;
+	border-color:#A88248;
+	color:#EADFCE;
+}
+
 
 @media screen and (max-width: 1500px) {
 	.col {
@@ -198,8 +223,7 @@ main {
 	}
 
 	.col {
-		top: 50%;
-    	left: 0%;
+		margin-top: 10%;
 	}
 
 	.textSteps {		
@@ -213,6 +237,25 @@ main {
 
 	.textSteps h2 {
 		font-size:24px;
+	}
+
+	.footer {
+		bottom:-78px;
+	}
+
+	.jumbotron {
+  		width:79%;
+	}
+
+	.jumbotron p {
+    	background: rgba(113, 115, 68, 0.75); 
+		padding:30px;
+		text-shadow: 1px 1px 5px #606239;
+    	border-radius:20px;
+	}
+
+	.btn {
+    	margin-left:33%;
 	}
 }
 
